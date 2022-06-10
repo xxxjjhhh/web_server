@@ -1,17 +1,18 @@
 const express = require('express');
 const app = express();
 
-app.get("/1",(req,res)=>{
+app.get("/1",function(req,res){
   res.send("req1");
 });
 
-app.get("/2",(req,res)=>{
-  res.send("req2");
+app.get("/2",function(req,res){
+  res.sendFile(__dirname + '/index.html');
 });
 
-app.listen(3000, (err)=>{
-  if (err) return console.log(err);
-  console.log("port 3000");
+
+app.listen(3000, function(){
+  console.log('3000');
 });
 
 //node express_server.js
+//localhost:3000

@@ -8,7 +8,6 @@ SSH
 ---
 
 <pre><code>
-
 for AWS EC2 (ubuntu)
 chmod 400 "mainkey.pem"
 ssh -i "mainkey.pem" ubuntu@serverpublicip
@@ -18,7 +17,6 @@ SCP
 ---
 
 <pre><code>
-
 for AWS EC2 (ubuntu)
 chmod 400 "mainkey.pem"
 
